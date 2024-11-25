@@ -1,0 +1,44 @@
+﻿<Window x:Class="Melon.Registration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Melon"
+        mc:Ignorable="d"
+        Title="Registration" Height="770" Width="650" AllowsTransparency="True" WindowStyle="None" Background="Transparent" WindowStartupLocation="CenterScreen">
+    <Border Width="Auto" Height="Auto" Name="WindowFrame" CornerRadius="30" Background="#DAFDBA" >
+        <Canvas>
+            <StackPanel>
+                <StackPanel Margin="0 0 0 -30" Width="648">
+                    <Button Margin="0 20 30 0" HorizontalAlignment="Right" Foreground="#45C4B0" Template="{StaticResource ButtonTypeThree}">
+                        <materialDesign:PackIcon Kind="Logout" Width="40" Height="40"></materialDesign:PackIcon>
+                    </Button>
+                    <Border Width="141" Height="141" Padding="3" Background="#fff" CornerRadius="100">
+                        <Image Width="125"/>
+                    </Border>
+
+                    <TextBlock Margin="0 10 0 0" Style="{StaticResource TitleText}" HorizontalAlignment="Center" FontSize="32"  FontWeight="Bold" Text="Добро пожаловать"></TextBlock>
+                    <TextBlock Margin="0 10 0 20" Style="{StaticResource TitleText}" FontWeight="SemiBold">Регистрация</TextBlock>
+                </StackPanel>
+
+                <StackPanel Height="502" Width="456">
+                    <StackPanel Visibility="Visible" Name="part_1" Height="496">
+                        <TextBlock Style="{StaticResource TitleText}" HorizontalAlignment="Left" Margin="70 20 0 0">Почта</TextBlock>
+                        <TextBox Margin="0 0 0 20"  Style="{DynamicResource TextBoxStyle1}" Width="332" Name="nameText" FontSize="34"></TextBox>
+
+                        <TextBlock Style="{StaticResource TitleText}" HorizontalAlignment="Left" Margin="70 0 0 0">Пароль</TextBlock>
+                        <TextBox Margin="0 0 0 20"  Style="{DynamicResource TextBoxStyle1}" Width="332" FontSize="34"></TextBox>
+
+                        <TextBlock Style="{StaticResource TitleText}" HorizontalAlignment="Left" Margin="70 00 0 0">Повторите пароль</TextBlock>
+                        <PasswordBox Style="{StaticResource Password}" Margin="0 0 0 0" Width="332" Name="passwordTextRepeat" FontSize="34"></PasswordBox>
+
+                        <Button Template="{StaticResource ButtonTypeOne}" Margin="0 25 0 0"  Height="53" Width="300" Content="Зарегистрироваться"></Button>
+
+                        <Button Margin="0 20 0 0" Template="{StaticResource ButtonTypeTwo}" FontWeight="Bold" Width="335">Если есть аккаунт</Button>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+        </Canvas>
+    </Border>
+</Window>
