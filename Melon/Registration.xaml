@@ -28,14 +28,14 @@
                         <TextBox Margin="0 0 0 20"  Style="{DynamicResource TextBoxStyle1}" Width="332" Name="nameText" FontSize="34"></TextBox>
 
                         <TextBlock Style="{StaticResource TitleText}" HorizontalAlignment="Left" Margin="70 0 0 0">Пароль</TextBlock>
-                        <TextBox Margin="0 0 0 20"  Style="{DynamicResource TextBoxStyle1}" Width="332" FontSize="34"></TextBox>
+                        <PasswordBox Margin="0 0 0 20"  Style="{StaticResource Password}" Name="passwordText" Width="332" FontSize="34"></PasswordBox>
 
                         <TextBlock Style="{StaticResource TitleText}" HorizontalAlignment="Left" Margin="70 00 0 0">Повторите пароль</TextBlock>
                         <PasswordBox Style="{StaticResource Password}" Margin="0 0 0 0" Width="332" Name="passwordTextRepeat" FontSize="34"></PasswordBox>
 
-                        <Button Template="{StaticResource ButtonTypeOne}" Margin="0 25 0 0"  Height="53" Width="300" Content="Зарегистрироваться"></Button>
+                        <Button Template="{StaticResource ButtonTypeOne}" Margin="0 25 0 0"  Height="53" Width="300" Content="Зарегистрироваться" Click="RegisterBtn_Click"></Button>
 
-                        <Button Margin="0 20 0 0" Template="{StaticResource ButtonTypeTwo}" FontWeight="Bold" Width="335">Если есть аккаунт</Button>
+                        <Button Margin="0 20 0 0" Template="{StaticResource ButtonTypeTwo}" FontWeight="Bold" Width="335" Click="BackToLogin_Click">Если есть аккаунт</Button>
                     </StackPanel>
                 </StackPanel>
             </StackPanel>
